@@ -44,6 +44,8 @@ namespace Valdis
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Valdis v1"));
             }
 
+            app.UseValdis();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
